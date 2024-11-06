@@ -6,9 +6,38 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Santa</title>
-    <script type="module" src="./index.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script type="module" src="src/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    awdwa
+<div id="modal" class="modal modal-close">
+    <div class="modal-card">
+        <p>Введите пароль для имени: <span id="modal-card-name">Саид</span></p>
+        <br>
+            <input id="pass-input" class="input" type="text">
+        <br>
+        <br>
+        <button id="confirm-modal-button" type="button" class="button">Подтвердить</button>
+        <button id="close-modal-button" type="button" class="button button-secondary">Закрыть</button>
+        <div id="your-name" class="your-name">
+
+        </div>
+    </div>
+</div>
+<h1 class="title">Таный санта</h1>
+<div class="subtitle">Выберите свое имя из списка:</div>
+<div id="names" class="names">
+<!--    <div onclick="console.log('awdwa')">wadawd</div>-->
+<!--    <div onclick="console.log('awdwa')">wadawd</div>-->
+<!--    <div onclick="console.log('awdwa')">wadawd</div>-->
+<!--    <div onclick="console.log('awdwa')">wadawd</div>-->
+</div>
 </body>
 </html>
